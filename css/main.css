@@ -1,13 +1,18 @@
 /*Fonts*/
 
 @font-face {
-  src: url("./fonts/Montserrat-Regular.otf");
+  src: url("../fonts/Montserrat-Regular.otf");
   font-family: "Montserrat-Regular";
-  font-weight: 300;
 }
 
 
 /* End fonts */
+
+body {
+  font-family: "Montserrat-Regular", sans-serif;
+  /*font-weight: 900;*/
+	
+}
 
 li {
 	list-style: none;
