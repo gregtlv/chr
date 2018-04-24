@@ -11,17 +11,19 @@
 <body>
 	<!-- Header -->
 	<header class="header">
-		
+
+		<!-- Container -->
+		<div class="container">
 		<!-- Nav and Logo -->
 		<div class="header__top">
-			
+
 			<!-- Logo -->
 			<img src="./img/header_logo.jpg" alt="Header_logo.jpg">
 
 			<!-- Nav -->
 			<nav class="header__nav">
-				<ul class="header__nav__items">
-					<li class="header__nav__item"><a href="#main" class="header__nav__link">Главная</a></li>
+				<ul id="navList" class="header__nav__items">
+					<li class="header__nav__item header__nav__item__current"><a href="#main" class="header__nav__link">Главная</a></li>
 					<li class="header__nav__item"><a href="#main" class="header__nav__link">Направления</a></li>
 					<li class="header__nav__item"><a href="#main" class="header__nav__link">Галерея</a></li>
 					<li class="header__nav__item"><a href="#main" class="header__nav__link">О нас</a></li>
@@ -29,34 +31,61 @@
 					<li class="header__nav__item"><a href="#main" class="header__nav__link">Поиск</a></li>
 				</ul>
 			</nav>
-		</div>		
-			
+			<span id="toggleButton" class="header__toggle">&#9776;</span>
+
+		</div>
+
 			<!-- Header Content -->
 			<div class="header__content">
-				
+
 				<h1 class="header__content__title">The Churchill Shop</h1>
 				<h2 class="header__content__subtitle">Мы вам рады!</h2>
 
 				<!-- Header Button -->
 				<div class="header__button">Подробнее</div>
-				
+
 			</div>
 
+		<!-- end container -->
+		</div>
 	</header>
 	<!-- end of Header -->
 
 	<!-- Main -->
-	<main>
-		
+	<main class="main">
+
+		<!-- Service Section -->
+
+			<section class="main__service">
+				<!-- Container -->
+			<div class="container">
+
+				<!-- White Block -->
+				<div class="main__service__block">
+					<h2 class="main__service__title">Мы занимаемся</h2>
+					<span class="main__service__line"><hr class="service__line">&<hr class="service__line"></span>
+					<h4 class="main__service__subtitle">Built is the template designed specially for architectures and builders, So start building you web site with built.</h4>
+				</div>
+
+			</div>
+			</section>
+
+		<!-- End of Service -->
+
+
 	</main>
 	<!-- end of Main -->
 
 	<!-- Footer -->
 	<footer>
-		
+
 	</footer>
 	<!-- End of Footer -->
 
-	<script src="./script.js"></script>
+	<script
+		src="http://code.jquery.com/jquery-2.2.4.min.js"
+		integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+		crossorigin="anonymous"></script>
+	<script src="./js/script.js"></script>
 </body>
 </html>
