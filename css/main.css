@@ -45,7 +45,6 @@ a {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  /* z-index: 100; */
 }
 
 	.header__top {
@@ -100,6 +99,7 @@ a {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+    position: relative;
 
     /* Временно */
     padding-top: 100px;
@@ -136,41 +136,29 @@ a {
       color: #0c0c0c;
       background-color: #fcfcfc;
     }
-/*End of Header */
 
-/* Main */
-
-.main {
-
-}
-  /* Servce Section */
-
-  .main__service {
-    width: 100%;
-    text-align: center;
-    /* margin: 0 auto; */
-    position: relative;
-  }
     .main__service__block {
+      display: block;
       background-color: #fff;
       position: absolute;
-      bottom: -270px;
+      /* left: 50%; */
+      top: 350px;
       width: 80%;
       margin: 0 auto;
+      text-align: center;
       border-radius: 2px;
-      box-shadow: 0 0px 0px 0 rgba(0,0,0,0.14),0 0px 0px 0px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+      box-shadow: 0 0px 0px 0 rgba(0,0,0,0.14), 0 0px 0px 0px rgba(0,0,0,0.12),0 -7px 5px 0 rgba(0,0,0,0.2);
     }
-
     .main__service__title {
       padding-top: 50px;
       font-family: 'Playfair Display', serif;
       font-weight: 100;
-      font-size: 32px;;
+      font-size: 32px;
     }
     hr {
       width: 70px;
       color: #7f7f7f;
-      background-color: 7f7f7f;
+      background-color: #7f7f7f;
       border: none;
       height: 2px;
       margin-right: 10px;
@@ -185,6 +173,7 @@ a {
       font-family: 'Playfair Display', serif;
       font-weight: 100;
       font-size: 32px;
+      padding-bottom: 35px;
     }
 
     .main__service__subtitle {
@@ -194,6 +183,94 @@ a {
       margin: 0 10%;
       padding-bottom: 100px;
     }
+/*End of Header */
+
+/* Main */
+
+.main {
+  width: 100%;
+}
+  /* Servce Section */
+
+  .main__service {
+    width: 100%;
+    /* text-align: center; */
+    /* margin: 0 auto; */
+  }
+
+
+  /* Main Service List */
+
+  .main__service__list {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    margin-top: 300px;
+  }
+
+    .main__service__item {
+      text-align: center;
+      position: relative;
+      width: 300px;
+    }
+      .main__service__item::before {
+        position: absolute;
+        margin: 0 auto;
+        top: -35px;
+        left: 100px;
+        width: 95px;
+        height: 95px;
+        content: '\A';
+        background: #f0f0f0;
+        background-position: center;
+
+        z-index: -1;
+        transition: all 0.5s;
+
+      }
+
+      .main__service__item:hover::before {
+
+        width: 100%;
+        height: 100%;
+
+      }
+
+      .main__service__img {
+        margin: 0 auto;
+        width: 30px;
+        /* margin-bottom: 60px; */
+      }
+
+      .main__service__item__title {
+        margin-top: 60px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 900;
+      }
+
+      .main__service__item__text {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        /* Поменять размер шрифта в em */
+        font-size: 13px;
+        color: #474747;
+      }
+
+      .main__service__item__line {
+        margin: 0 auto;
+        margin: 30px auto;
+        width: 65px;
+        border: none;
+        background-color: #000;
+        color: #000;
+        height: 2px;
+
+      }
+
+
+
+  /* end of Main Service List */
+
 
   /* End of Service Section */
 
