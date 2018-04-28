@@ -250,6 +250,7 @@ a {
     /* end of BG Line */
 
     .main__gallery {
+      margin-top: -27px;
       background-color: #ededed;
     }
 
