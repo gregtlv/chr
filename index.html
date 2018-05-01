@@ -3,6 +3,7 @@
 	<meta charset="UTF-8">
 	<title>The Churchill Shop</title>
 	<!-- <link rel="stylesheet" href="./css/reset.css"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./css/normalize.css">
 	<link rel="stylesheet" href="./css/main.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -18,17 +19,16 @@
 		<div class="header__top">
 
 			<!-- Logo -->
-			<img src="./img/header_logo.jpg" alt="Header_logo.jpg">
+			<img src="./img/logo/chr_main.svg" height="70px" alt="Header_logo.jpg">
 
 			<!-- Nav -->
 			<nav class="header__nav">
 				<ul id="navList" class="header__nav__items">
 					<li class="header__nav__item header__nav__item__current"><a href="#main" class="header__nav__link">Главная</a></li>
 					<li class="header__nav__item"><a href="#main" class="header__nav__link">Направления</a></li>
-					<li class="header__nav__item"><a href="#main" class="header__nav__link">Галерея</a></li>
-					<li class="header__nav__item"><a href="#main" class="header__nav__link">О нас</a></li>
+					<li class="header__nav__item"><a href="#gallery" class="header__nav__link">Портфолио</li></a>
+					<li class="header__nav__item"><a href="#about" class="header__nav__link">About</a></li>
 					<li class="header__nav__item"><a href="#main" class="header__nav__link">Контакты</a></li>
-					<li class="header__nav__item"><a href="#main" class="header__nav__link">Поиск</a></li>
 				</ul>
 			</nav>
 			<span id="toggleButton" class="header__toggle">&#9776;</span>
@@ -42,7 +42,7 @@
 				<h2 class="header__content__subtitle">Мы вам рады!</h2>
 
 				<!-- Header Button -->
-				<div class="header__button">Подробнее</div>
+				<a href="#main"><span class="header__button">Подробнее</span></a>
 
 			</div>
 
@@ -116,7 +116,7 @@
 
 		<!-- Main Gallery Section -->
 
-		<section class="main__gallery">
+		<section id="gallery" class="main__gallery">
 
 			<div class="container">
 				<h2 class="main__service__title">Наше портфолио</h2>
@@ -124,14 +124,14 @@
 				<h4 class="main__service__subtitle">Some of the projects we have done since it was founded.</h4>
 
 				<!-- Jquery Menu -->
-				<ul class="gallery__menu">
+				<!-- <ul class="gallery__menu">
 					<li class="gallery__menu__item">Clothes</li>
 					<li class="gallery__menu__item">Clothes</li>
 					<li class="gallery__menu__item">Clothes</li>
 					<li class="gallery__menu__item">Clothes</li>
 					<li class="gallery__menu__item">Clothes</li>
 					<li class="gallery__menu__item">Clothes</li>
-				</ul>
+				</ul> -->
 
 				<ul class="gallery__img__block">
 					<li class="gallery__img__item"><img src="./img/gallery/g1.jpg" width="230px"></li>
@@ -144,7 +144,7 @@
 					<li class="gallery__img__item"><img src="./img/gallery/g1.jpg" width="230px"></li>
 				</ul>
 
-				<h3 class="main__gallery__view-all">Lorem ipsum dolor >>></h3>
+				<!-- <h3 class="main__gallery__view-all">Lorem ipsum dolor >>></h3> -->
 			</div>
 
 		</section>
@@ -169,7 +169,7 @@
 
 
 	<!-- About Section -->
-	<section class="main__about">
+	<section id="about" class="main__about">
 
 		<div class="container">
 			<h2 class="main__service__title">Руководитель проекта</h2>
@@ -188,32 +188,7 @@
 	<div class="container">
 		<h2 class="main__service__title">Instagram</h2>
 		<span class="main__service__line"><hr class="service__line">&<hr class="service__line"></span>
-		<script type="text/javascript" src="./js/instafeed.min.js"></script>
 
-		<script type="text/javascript">
-    var feed = new Instafeed({
-        get: 'tagged',
-        tagName: 'israel',
-        clientId: '467e12962d4d4fe8bc5aa381897f059b'
-    });
-    feed.run();
-		</script>
-
-		<script>
-    var userFeed = new Instafeed({
-        get: 'user',
-        userId: 'howtoremovethisprofile',
-        accessToken: '467e12962d4d4fe8bc5aa381897f059b'
-    });
-    userFeed.run();
-</script>
-
-
-		<!-- <ul class="main__instagram__list">
-			<a class="main__instagram__item" href="#"><img src="./img/insta.jpg" alt="Instagram"></a>
-			<a class="main__instagram__item" href="#"><img src="./img/insta.jpg" alt="Instagram"></a>
-			<a class="main__instagram__item" href="#"><img src="./img/insta.jpg" alt="Instagram"></a>
-		</ul> -->
 	</div>
 
 	</section>
@@ -231,12 +206,12 @@
 
 			<div class="container">
 
-				<img src="./img/logos/3.jpg" alt="" class="footer__img">
+				<img src="./img/logo/chr_main.svg" alt="Logo" class="footer__img">
 				<div class="footer__social">
-					<li class="footer__social__item">1</li>
-					<li class="footer__social__item">2</li>
-					<li class="footer__social__item">3</li>
-					<li class="footer__social__item">4</li>
+					<a href="#" target="_blank"><li><i class="fa fa-facebook-square"></i></li></a>
+					<a href="#" target="_blank"><li><i class="fa fa-instagram"></i></li></a>
+					<a href="#"><li><i class="fa fa-flickr"></i></li></a>
+					<a href="#"><li><i class="fa fa-pinterest"></i></li></a>
 				</div>
 				<span>Copyright 2018</span>
 
