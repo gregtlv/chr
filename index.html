@@ -188,12 +188,32 @@
 	<div class="container">
 		<h2 class="main__service__title">Instagram</h2>
 		<span class="main__service__line"><hr class="service__line">&<hr class="service__line"></span>
+		<script type="text/javascript" src="./js/instafeed.min.js"></script>
 
-		<ul class="main__instagram__list">
+		<script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'tagged',
+        tagName: 'israel',
+        clientId: '467e12962d4d4fe8bc5aa381897f059b'
+    });
+    feed.run();
+		</script>
+
+		<script>
+    var userFeed = new Instafeed({
+        get: 'user',
+        userId: 'howtoremovethisprofile',
+        accessToken: '467e12962d4d4fe8bc5aa381897f059b'
+    });
+    userFeed.run();
+</script>
+
+
+		<!-- <ul class="main__instagram__list">
 			<a class="main__instagram__item" href="#"><img src="./img/insta.jpg" alt="Instagram"></a>
 			<a class="main__instagram__item" href="#"><img src="./img/insta.jpg" alt="Instagram"></a>
 			<a class="main__instagram__item" href="#"><img src="./img/insta.jpg" alt="Instagram"></a>
-		</ul>
+		</ul> -->
 	</div>
 
 	</section>
@@ -231,5 +251,6 @@
 		crossorigin="anonymous"></script>
 	<script src="./js/script.js"></script>
 	<script src="http://127.0.0.1:35729/livereload.js?ext=Firefox&amp;extver=20.3.0"></script>
+
 </body>
 </html>
