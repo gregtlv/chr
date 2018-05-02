@@ -6,7 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./css/normalize.css">
 	<link rel="stylesheet" href="./css/main.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
 
 </head>
 <body>
@@ -26,12 +27,12 @@
 				<ul id="navList" class="header__nav__items">
 					<li class="header__nav__item header__nav__item__current"><a href="#main" class="header__nav__link">Главная</a></li>
 					<li class="header__nav__item"><a href="#main" class="header__nav__link">Направления</a></li>
-					<li class="header__nav__item"><a href="#gallery" class="header__nav__link">Портфолио</li></a>
-					<li class="header__nav__item"><a href="#about" class="header__nav__link">About</a></li>
+					<li class="header__nav__item"><a href="#gallery" class="header__nav__link">Галерея</li></a>
+					<li class="header__nav__item"><a href="#about" class="header__nav__link">О нас</a></li>
 					<li class="header__nav__item"><a href="#main" class="header__nav__link">Контакты</a></li>
 				</ul>
 			</nav>
-			<span id="toggleButton" class="header__toggle">&#9776;</span>
+			<span id="toggleButton" class="header__toggle"><i class="fas fa-bars"></i></span>
 
 		</div>
 
@@ -60,7 +61,7 @@
 		<!-- White Block -->
 		<!-- <div class="main__service__block"> -->
 		<div class="container">
-			<h2 class="main__service__title">Мы занимаемся</h2>
+			<h2 class="main__service__title">Наши направления</h2>
 			<span class="main__service__line"><hr class="service__line">&<hr class="service__line"></span>
 			<h4 class="main__service__subtitle">Built is the template designed specially for architectures and builders, So start building you web site with built.</h4>
 
@@ -107,7 +108,10 @@
 
 				<div class="main__bg-line">
 					<div class="container">
-						<h3 class="bg-line__text">Felis dolor integer facilisis habitasse a himenaeos urna aliquam taciti ipsum amet eleifend eros nulla.</h3>
+						<blockquote class="bg-line__text">
+								<q>Felis dolor integer facilisis habitasse a himenaeos urna aliquam taciti ipsum amet eleifend eros nulla.</q>
+								<cite>Уинстон Черчиль</cite>
+						</blockquote>
 					</div>
 				</div>
 
@@ -119,7 +123,7 @@
 		<section id="gallery" class="main__gallery">
 
 			<div class="container">
-				<h2 class="main__service__title">Наше портфолио</h2>
+				<h2 class="main__service__title">Галерея</h2>
 				<span class="main__service__line"><hr class="service__line">&<hr class="service__line"></span>
 				<h4 class="main__service__subtitle">Some of the projects we have done since it was founded.</h4>
 
@@ -176,6 +180,52 @@
 			<span class="main__service__line"><hr class="service__line">&<hr class="service__line"></span>
 			<img src="./img/about/vladimir.jpg" alt="Vladimir" class="main__about__img">
 			<p class="main__about__text">Владимир Гуревич</p>
+			<ul class="about__contacts">
+				<script type="text/javascript" language="javascript">
+			{ coded = "IMlGkOkc.k.TwcmIkuF@TOlkM.uXO"
+			  key = "CKURMimwaZTcFP6I8d53N2jxfHo9S71QbskOtlAeuBLgrhGnvJ0VDWqXz4yEpY"
+			  shift=coded.length
+			  link=""
+			  for (i=0; i<coded.length; i++) {
+			    if (key.indexOf(coded.charAt(i))==-1) {
+			      ltr = coded.charAt(i)
+			      link += (ltr)
+			    }
+			    else {
+			      ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+			      link += (key.charAt(ltr))
+						envelope = "<i class='fas fa-envelope'></i>"
+			    }
+			  }
+			document.write("<a href='mailto:"+link+"'>"+envelope+"</a>")
+			}
+			</script><noscript><i class="fab fa-js"></i></noscript>
+			<script type="text/javascript" language="javascript">
+			{ coded = "+1 fEL Z1L-ZE-DD"
+			  key = "UVEmbzsKtGALOYkanXHN7xhy09PjCuiIrMog15q3cfvpe8BJ2wd4TWQZR6FSlD"
+			  shift=coded.length
+			  link=""
+			  for (i=0; i<coded.length; i++) {
+			    if (key.indexOf(coded.charAt(i))==-1) {
+			      ltr = coded.charAt(i)
+			      link += (ltr)
+			    }
+			    else {
+			      ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+			      link += (key.charAt(ltr))
+						phone = "<i class='fas fa-phone-square'></i>"
+
+
+			    }
+			  }
+			document.write("<a href='tel:"+link+"'>"+phone+"</a>")
+			}
+			</script><noscript><i class="fab fa-js"></i></noscript>
+
+
+
+
+			</ul>
 		</div>
 
 	</section>
@@ -207,10 +257,12 @@
 			<div class="container">
 
 				<div class="footer__social">
-					<a href="#" target="_blank"><li><i class="fa fa-facebook-square"></i></li></a>
-					<a href="#" target="_blank"><li><i class="fa fa-instagram"></i></li></a>
-					<a href="#"><li><i class="fa fa-flickr"></i></li></a>
-					<a href="#"><li><i class="fa fa-pinterest"></i></li></a>
+					<a href="#" target="_blank"><li><i class="fab fa-facebook"></i>
+
+</li></a>
+					<a href="#" target="_blank"><li><i class="fab fa-instagram"></i></li></a>
+					<!-- <a href="#"><li><i class="fa fa-flickr"></i></li></a>
+					<a href="#"><li><i class="fa fa-pinterest"></i></li></a> -->
 				</div>
 				<img src="./img/logo/chr_main.svg" alt="Logo" class="footer__img">
 				<span>Copyright 2018</span>
