@@ -120,6 +120,7 @@ a {
       font-weight: 100;
       font-size: 45px;
       color: #fcfcfc;
+      margin-bottom: 1em;
 		}
 
 		.header__content__subtitle {
@@ -160,6 +161,11 @@ a {
       border-radius: 2px;
       box-shadow: 0 0px 0px 0 rgba(0,0,0,0.14), 0 0px 0px 0px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);;
     } */
+
+    .main__service {
+      padding-bottom: 60px;
+
+    }
 
     .main__service__title {
       text-align: center;
@@ -289,6 +295,7 @@ a {
         font-weight: 100;
         letter-spacing: 1px;
         font-size: 23px;
+        text-align: center;
       }
 
     /* end of BG Line */
@@ -298,6 +305,7 @@ a {
     .main__gallery {
       margin-top: -27px;
       background-color: #ededed;
+      padding-bottom: 30px;
     }
 
       .gallery__menu {
@@ -524,6 +532,7 @@ a {
           align-content: center;
           margin: 15px 0 15px 0;
         }
+
           .footer__social a {
             display: flex;
             justify-content: center;
@@ -535,11 +544,17 @@ a {
             width: 25px;
             height: 25px;
           }
+
           .footer__social a:hover {
             transition: all 0.3s;
             background-color: #fff;
             color: #171717;
           }
+
+        .footer__img {
+          width: 5em;
+          margin-bottom: 1.3em;
+        }
 
 /* End of Footer */
 
@@ -606,6 +621,7 @@ a {
 
     .header__toggle {
         display: block;
+        color: #fff;
     }
 
 }
