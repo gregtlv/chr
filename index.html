@@ -12,7 +12,7 @@
 </head>
 <body>
 	<!-- Header -->
-	<header class="header">
+	<header id="header" class="header">
 
 		<!-- Container -->
 		<div class="container">
@@ -25,10 +25,10 @@
 			<!-- Nav -->
 			<nav class="header__nav">
 				<ul id="navList" class="header__nav__items">
-					<li class="header__nav__item header__nav__item__current"><a href="#main" class="header__nav__link">Главная</a></li>
-					<li class="header__nav__item"><a href="#main" class="header__nav__link">Направления</a></li>
-					<li class="header__nav__item"><a href="#gallery" class="header__nav__link">Галерея</li></a>
-					<li class="header__nav__item"><a href="#about" class="header__nav__link">Контакты</a></li>
+					<a href="#header" class="header__nav__item"><li  class="header__nav__link">Главная</li></a>
+					<a href="#main" class="header__nav__item"><li  class="header__nav__link">Направления</li></a>
+					<a href="#gallery" class="header__nav__item"><li class="header__nav__link">Галерея</li></a>
+					<a href="#about" class="header__nav__item"><li class="header__nav__link">Контакты</li></a>
 					<!-- <li class="header__nav__item"><a href="#main" class="header__nav__link">Контакты</a></li> -->
 				</ul>
 			</nav>
@@ -138,16 +138,27 @@
 				</ul> -->
 
 				<ul class="gallery__img__block">
-					<li class="gallery__img__item"><img src="./img/gallery/g1.jpg" width="230px"></li>
-					<li class="gallery__img__item"><img src="./img/gallery/g1.jpg" width="230px"></li>
-					<li class="gallery__img__item"><img src="./img/gallery/g1.jpg" width="230px"></li>
-					<li class="gallery__img__item"><img src="./img/gallery/g1.jpg" width="230px"></li>
-					<li class="gallery__img__item"><img src="./img/gallery/g1.jpg" width="230px"></li>
-					<li class="gallery__img__item"><img src="./img/gallery/g1.jpg" width="230px"></li>
-					<li class="gallery__img__item"><img src="./img/gallery/g1.jpg" width="230px"></li>
-					<li class="gallery__img__item"><img src="./img/gallery/g1.jpg" width="230px"></li>
+					<li class="gallery__img__item"><a><img src="./img/gallery/g1_.jpg" width="230px"></a></li>
+					<li class="gallery__img__item"><a><img src="./img/gallery/g1_.jpg" width="230px"></a></li>
+					<li class="gallery__img__item"><a><img src="./img/gallery/g1_.jpg" width="230px"></a></li>
+					<li class="gallery__img__item"><a><img src="./img/gallery/g1_.jpg" width="230px"></a></li>
+					<li class="gallery__img__item"><a><img src="./img/gallery/g1_.jpg" width="230px"></a></li>
+					<li class="gallery__img__item"><a><img src="./img/gallery/g1_.jpg" width="230px"></a></li>
+					<li class="gallery__img__item"><a><img src="./img/gallery/g1_.jpg" width="230px"></a></li>
+					<li class="gallery__img__item"><a><img src="./img/gallery/g1_.jpg" width="230px"></a></li>
 				</ul>
 
+				<!-- <script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
+					<script src="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/js/lightgallery.js"></script>
+					<script src="https://cdn.rawgit.com/sachinchoolur/lg-pager.js/master/dist/lg-pager.js"></script>
+					<script src="https://cdn.rawgit.com/sachinchoolur/lg-autoplay.js/master/dist/lg-autoplay.js"></script>
+					<script src="https://cdn.rawgit.com/sachinchoolur/lg-fullscreen.js/master/dist/lg-fullscreen.js"></script>
+					<script src="https://cdn.rawgit.com/sachinchoolur/lg-zoom.js/master/dist/lg-zoom.js"></script>
+					<script src="https://cdn.rawgit.com/sachinchoolur/lg-hash.js/master/dist/lg-hash.js"></script>
+					<script src="https://cdn.rawgit.com/sachinchoolur/lg-share.js/master/dist/lg-share.js"></script>
+					<script>
+							lightGallery(document.getElementById('lightgallery'));
+				</script> -->
 				<!-- <h3 class="main__gallery__view-all">Lorem ipsum dolor >>></h3> -->
 			</div>
 
@@ -258,9 +269,7 @@
 				<img src="./img/logo/chr_main.svg" alt="Logo" class="footer__img">
 
 				<div class="footer__social">
-					<a href="#" target="_blank"><li><i class="fab fa-facebook"></i>
-
-</li></a>
+					<a href="#" target="_blank"><li><i class="fab fa-facebook"></i></li></a>
 					<a href="#" target="_blank"><li><i class="fab fa-instagram"></i></li></a>
 					<!-- <a href="#"><li><i class="fa fa-flickr"></i></li></a>
 					<a href="#"><li><i class="fa fa-pinterest"></i></li></a> -->
