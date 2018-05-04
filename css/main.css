@@ -365,7 +365,7 @@ a {
 
         .partners__list {
           display: flex;
-          justify-content: center;
+          justify-content: space-around;
           padding: 60px 0 60px 0;
         }
 
@@ -458,6 +458,10 @@ a {
         .phoneDesktop {
           padding-top: 5px;
           font-size: 1.1em;
+        }
+
+        .whatsapp__mobile {
+          display: none;
         }
 
       .main__about__img {
@@ -643,6 +647,13 @@ a {
   }
 
 }
+@media screen and (max-width: 833px) {
+  .gallery__img__item img {
+      width: 200px;
+  }
+
+}
+
 @media screen and (max-width: 768px) {
 
     .container {
@@ -694,6 +705,13 @@ a {
 
 }
 /* end Header */
+
+/* @media screen and (max-width: 640px) {
+  .whatsapp__mobile {
+    display: block;
+  }
+} */
+
 
 /* 555 */
 
@@ -779,6 +797,10 @@ a {
   }
   .phoneDesktop {
     display: none;
+  }
+
+  .whatsapp__mobile {
+    display: block;
   }
 
   .main__about__text {
