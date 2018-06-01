@@ -1,6 +1,9 @@
-function showEmail () {
-  coded = "i6K8.V6NBV6XOO@ploXO.VKl";
-  key = "LJZTuyf25K7Gvb1qphXOkQWarjcENC9zsmnxeMwF86tI34UoBDVYd0gHilPRSA";
+"use strict"
+
+function showEmail (email, emailKey) {
+  var coded, key, shift, link, i, ltr, envelope, mailDesktop;
+  coded = email;
+  key = emailKey;
   shift=coded.length;
   link="";
   for (i=0; i<coded.length; i++) {
@@ -19,9 +22,10 @@ document.write("<span class='about_contact__item'><a href='mailto:"+link+"'>"+en
 }
 
 
-function showNumber () {
-  coded = "+1 fEL Z1L-ZE-DD";
-  key = "UVEmbzsKtGALOYkanXHN7xhy09PjCuiIrMog15q3cfvpe8BJ2wd4TWQZR6FSlD";
+function showNumber (num, numKey) {
+  var coded, key, shift, link, i, ltr, phone, phoneDesktop;
+  coded = num;
+  key = numKey;
   shift=coded.length;
   link="";
   for (i=0; i<coded.length; i++) {
@@ -39,9 +43,10 @@ function showNumber () {
 document.write("<span class='about_contact__item'><a href='tel:"+link+"'>"+phone+phoneDesktop+"</a></span>");
 }
 
-function showWhatsApp() {
-  coded = "tH3NFtNF3kk";
-  key = "UondHISu5L2YjA80gEezJ3XhaksiwDqZFOCKp7fPm1bRW4rvt6GVcBl9yQTMNx";
+function showWhatsApp (whtspNum, whtspKey) {
+  var coded, key, shift, link, i, ltr, whatsapp, whatsappPrefix, whatsappPostPrefix ;
+  coded = whtspNum;
+  key = whtspKey;
   shift=coded.length;
   link="";
   for (i=0; i<coded.length; i++) {
